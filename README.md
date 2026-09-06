@@ -97,6 +97,40 @@ The key objectives of this project are:
                     │ Business Insights   │
                     │ & Recommendations   │
                     └─────────────────────┘
+                    └─────────────────────┘
+```
+## 📊 Power BI Dashboard
+
+The interactive Power BI dashboard provides an end-to-end view of logistics operations, shipment performance, SLA compliance, financial performance, customer profitability, warehouse performance and route efficiency.
+
+### Executive Overview
+
+Provides an executive-level summary of shipment volume, revenue, profit, SLA compliance, warehouse performance and operational trends.
+
+![Executive Overview](Dashboard/01_Executive_Overview.png)
+---
+
+### SLA & Operations
+
+Analyzes SLA compliance, delayed shipments, average delay hours, warehouse-level SLA performance, route-level SLA performance and processing time trends.
+
+![SLA & Operations](Dashboard/02_SLA_Operations.png)
+
+---
+
+### Financial & Revenue
+
+Provides financial analysis covering revenue, transportation cost, total profit, profit margin, monthly financial trends and top customers by profitability.
+
+![Financial & Revenue](Dashboard/03_Financial_Revenue.png)
+
+---
+
+### Customer & Route Deep-Dive
+
+Provides detailed analysis of customer profitability, route profit margins, shipment volume, transportation cost per kilometer and customer-level performance.
+
+![Customer & Route Deep-Dive](Dashboard/04_Customer_Route_Deep_Dive.png)
 
 Data Model
 Fact Table
