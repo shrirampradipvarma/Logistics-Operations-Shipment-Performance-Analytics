@@ -208,27 +208,24 @@ Dashboard Analysis
 The Power BI dashboard provides analysis across multiple operational dimensions.
 
 1. Executive KPI Analysis
-
 Provides a high-level view of:
-
 Shipment volume
 Revenue
 Cost
 Profit
 SLA performance
 Operational efficiency
+
 2. SLA Performance
-
 Analyzes:
-
 SLA compliance
 SLA breaches
 Delivery delays
 Delay trends
 Operational areas requiring improvement
+
 3. Warehouse Performance
 Compares warehouses based on:
-
 Shipment volume
 Revenue
 Cost
@@ -238,19 +235,16 @@ SLA performance
 The analysis identified Bengaluru Distribution Center as a significant contributor, accounting for approximately 52.9% of the analyzed shipment performance.
 
 4. Route Analysis
-
 Evaluates routes based on:
-
 Distance
 Shipment volume
 Transportation cost
 Revenue
 Profitability
 Delivery performance
+
 5. Customer Analysis
-
 Identifies:
-
 High-value customers
 Shipment contribution
 Revenue contribution
@@ -259,18 +253,15 @@ Customer profitability
 Nazareth Ltd emerged as the highest-profit customer in the analysis, generating approximately ₹958,020.66 profit across 88 shipments.
 
 6. Driver & Vehicle Analysis
-
 Evaluates:
-
 Driver shipment performance
 Vehicle utilization
 Shipment allocation
 Operational workload
 Delivery performance
+
 7. Financial Analysis
-
 Analyzes:
-
 Revenue trends
 Transportation costs
 Profitability
