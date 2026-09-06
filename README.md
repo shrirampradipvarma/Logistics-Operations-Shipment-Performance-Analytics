@@ -138,149 +138,166 @@ Provides detailed analysis of customer profitability, route profit margins, ship
 
 ![Customer & Route Deep-Dive](Dashboard/04_Customer_Route_Deep_Dive.png)
 
-Data Model
-Fact Table
-
-FactShipment
-
+## Data Model
+#### Fact Table:
+###### FactShipment:
 Contains shipment-level operational and financial information such as:
 
-Shipment ID
-Order ID
-Customer ID
-Warehouse ID
-Vehicle ID
-Driver ID
-Route ID
-Dispatch Date
-Delivery Date
-Shipment Status
-Shipment Type
-Weight
-Distance
-Transportation Cost
-Revenue
-Delay Hours
-SLA Status
-Processing Time
-Dimension Tables
-DimCustomer
-DimDate
-DimDriver
-DimRoute
-DimVehicle
-DimWarehouse
+- Shipment ID
+- Order ID
+- Customer ID
+- Warehouse ID
+- Vehicle ID
+-Driver ID
+- Route ID
+- Dispatch Date
+- Delivery Date
+- Shipment Status
+- Shipment Type
+- Weight
+- Distance
+- Transportation Cost
+- Revenue
+- Delay Hours
+- SLA Status
+- Processing Time
+- - Dimension Tables
+- - DimCustomer
+- - DimDate
+- - DimDriver
+- - DimRoute
+- - DimVehicle
+- - DimWarehouse
 
-Key KPIs
+## Key KPIs
 
-The Power BI solution includes a range of operational, SLA and financial KPIs.
+The Power BI solution includes a range of operational, SLA and financial KPIs:
 
-Operational KPIs
-Total Shipments
-Total Shipment Quantity
-Total Locations
-Total Customers
-Shipment Status
-Average Processing Time
-Average Delivery Delay
-SLA KPIs
-SLA Compliant Shipments
-SLA Breach Shipments
-SLA Compliance %
-Average Delay Hours
-On-Time vs Delayed Shipments
-Financial KPIs
-Total Revenue
-Total Transportation Cost
-Total Profit
-Profit Margin
-Average Revenue per Shipment
-Average Transportation Cost per Shipment
-Efficiency KPIs
-Revenue per Kilometer
-Cost per Kilometer
-Shipment Weight Analysis
-Route Performance
-Warehouse Efficiency
+- Operational KPIs
+- Total Shipments
+- Total Shipment Quantity
+- Total Locations
+- Total Customers
+- Shipment Status
+- Average Processing Time
+- Average Delivery Delay
+- SLA KPIs
+- SLA Compliant Shipments
+- SLA Breach Shipments
+- SLA Compliance %
+- Average Delay Hours
+- On-Time vs Delayed Shipments
+- Financial KPIs
+- Total Revenue
+- Total Transportation Cost
+- Total Profit
+- Profit Margin
+- Average Revenue per Shipment
+- Average Transportation Cost per Shipment
+- Efficiency KPIs
+- Revenue per Kilometer
+- Cost per Kilometer
+- Shipment Weight Analysis
+- Route Performance
+- Warehouse Efficiency
 
-Dashboard Analysis
+## Dashboard Analysis
 
 The Power BI dashboard provides analysis across multiple operational dimensions.
-```
-1. Executive KPI Analysis
+
+### 1. Executive KPI Analysis
+
 Provides a high-level view of:
-Shipment volume
-Revenue
-Cost
-Profit
-SLA performance
-Operational efficiency
 
-2. SLA Performance
+- Shipment volume
+- Revenue
+- Cost
+- Profit
+- SLA performance
+- Operational efficiency
+
+### 2. SLA Performance
+
 Analyzes:
-SLA compliance
-SLA breaches
-Delivery delays
-Delay trends
-Operational areas requiring improvement
 
-3. Warehouse Performance
+- SLA compliance
+- SLA breaches
+- Delivery delays
+- Delay trends
+- Operational areas requiring improvement
+
+### 3. Warehouse Performance
+
 Compares warehouses based on:
-Shipment volume
-Revenue
-Cost
-Profit
-SLA performance
+
+- Shipment volume
+- Revenue
+- Cost
+- Profit
+- SLA performance
 
 The analysis identified Bengaluru Distribution Center as a significant contributor, accounting for approximately 52.9% of the analyzed shipment performance.
 
-4. Route Analysis
+### 4. Route Analysis
+
 Evaluates routes based on:
-Distance
-Shipment volume
-Transportation cost
-Revenue
-Profitability
-Delivery performance
 
-5. Customer Analysis
-Identifies:
-High-value customers
-Shipment contribution
-Revenue contribution
-Customer profitability
+- Shipment volume
+- Distance
+- Revenue
+- Transportation cost
+- Profit
+- SLA performance
+- Delay
 
-Nazareth Ltd emerged as the highest-profit customer in the analysis, generating approximately ₹958,020.66 profit across 88 shipments.
+### 5. Customer Analysis
 
-6. Driver & Vehicle Analysis
-Evaluates:
-Driver shipment performance
-Vehicle utilization
-Shipment allocation
-Operational workload
-Delivery performance
+Analyzes customers based on:
 
-7. Financial Analysis
+- Shipment volume
+- Revenue
+- Cost
+- Profit
+- SLA performance
+- Delay
+
+### 6. Driver & Vehicle Analysis
+
+Evaluates driver and vehicle performance based on:
+
+- Shipment volume
+- Distance
+- Weight
+- Transportation cost
+- Delay
+- SLA performance
+- Profit
+
+### 7. Financial Analysis
+
 Analyzes:
-Revenue trends
-Transportation costs
-Profitability
-Profit margins
-Cost efficiency
 
-Key Business Insights
+- Revenue
+- Transportation cost
+- Profit
+- Profit margin
+- Average revenue per shipment
+- Average profit per shipment
+
+## Key Business Insights
+
 The analysis provides several actionable insights:
-Shipment performance varies significantly across warehouses.
-Warehouse-level concentration can create operational dependency and capacity risks.
-SLA performance should be continuously monitored to identify delayed shipments.
-Certain customers contribute significantly more to overall profitability.
-Route distance and transportation cost have a direct impact on shipment profitability.
-Driver and vehicle performance can be used to identify utilization and workload imbalances.
-Revenue alone should not be used to evaluate performance; profitability and cost efficiency should also be considered.
-Time-based analysis helps identify operational trends and performance changes.
 
-Business Recommendations
+- Shipment performance varies significantly across warehouses.
+- Warehouse-level concentration can create operational dependency and capacity risks.
+- SLA performance should be continuously monitored to identify delayed shipments.
+- Certain customers contribute significantly more to overall profitability.
+- Route distance and transportation cost have a direct impact on shipment profitability.
+- Driver and vehicle performance can be used to identify utilization and workload imbalances.
+- Revenue alone should not be used to evaluate performance; profitability and cost efficiency should also be considered.
+- Time-based analysis helps identify operational trends and performance changes.
 
+## Business Recommendations
 Based on the analysis, the following actions are recommended:
 
 1. Improve SLA Performance
@@ -311,25 +328,28 @@ Use driver-level operational KPIs to identify workload imbalances and performanc
 
 Use the Power BI dashboard as an operational monitoring tool for management decision-making.
 
-Python Component
+## Python Component
+
 The Python component is structured into modular components for dataset generation and validation.
+
+### Python Structure
+
+```
 Python/
-│
 ├── config/
 ├── generators/
 ├── utils/
 ├── main.py
-└── validation.py
-The Python workflow supports:
+└── validation.pyThe Python workflow supports:
+```
+- Dataset generation
+- Master data creation
+- Fact shipment generation
+- Data validation
+- Modular data-processing logic
 
-Dataset generation
-Master data creation
-Fact shipment generation
-Data validation
-Modular data-processing logic
-
-SQL Component
-SQL/
+## SQL Component
+```SQL/
 │
 ├── 01_Database_Setup/
 ├── 02_Table_Creation/
@@ -337,18 +357,18 @@ SQL/
 ├── 04_Data_Validation/
 ├── 05_Analysis_Queries/
 └── 06_Views/
+```
 The SQL layer supports:
+- Database setup
+- Table creation
+- Data loading
+- Data validation
+- Analytical queries
+- KPI views
+- Operational analysis
 
-Database setup
-Table creation
-Data loading
-Data validation
-Analytical queries
-KPI views
-Operational analysis
-
-Project Structure
-Logistics-Operations-Analytics/
+## Project Structure
+```Logistics-Operations-Analytics/
 │
 ├── Dashboard/
 │   ├── Logistic_Operations_Dashboard.pbix
@@ -385,40 +405,41 @@ Logistics-Operations-Analytics/
 │
 ├── .gitignore
 └── README.md
+```
 
-Skills Demonstrated
+## Skills Demonstrated
 This project demonstrates practical experience in:
 
-Data Analytics
-Operations Analytics
-Logistics Analytics
-Python
-SQL
-Power Query
-Power BI
-DAX
-Data Modeling
-Star Schema
-KPI Development
-Time Intelligence
-Data Validation
-Dashboard Development
-Business Intelligence
-Business Recommendations
-Git & GitHub
+- Data Analytics
+- Operations Analytics
+- Logistics Analytics
+- Python
+- SQL
+- Power Query
+- Power BI
+- DAX
+- Data Modeling
+- Star Schema
+- KPI Development
+- Time Intelligence
+- Data Validation
+- Dashboard Development
+- Business Intelligence
+- Business Recommendations
+- Git & GitHub
 
-Project Outcome
+## Project Outcome
 
 The final solution converts raw logistics shipment data into an interactive analytical platform that enables management to:
 
-Monitor operational KPIs
-Track SLA performance
-Compare warehouse performance
-Analyze route efficiency
-Evaluate customer profitability
-Monitor drivers and vehicles
-Track revenue and costs
-Identify operational improvement opportunities
-Make data-driven business decisions
+- Monitor operational KPIs
+- Track SLA performance
+- Compare warehouse performance
+- Analyze route efficiency
+- Evaluate customer profitability
+- Monitor drivers and vehicles
+- Track revenue and costs
+- Identify operational improvement opportunities
+- Make data-driven business decisions
 
-Focus Areas: Operations Analytics | Data Analytics | Power BI | SQL | Python
+- - Focus Areas: Operations Analytics | Data Analytics | Power BI | SQL | Python
