@@ -206,7 +206,7 @@ Warehouse Efficiency
 Dashboard Analysis
 
 The Power BI dashboard provides analysis across multiple operational dimensions.
-
+```
 1. Executive KPI Analysis
 Provides a high-level view of:
 Shipment volume
