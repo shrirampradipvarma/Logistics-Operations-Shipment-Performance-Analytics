@@ -11,6 +11,13 @@ The project follows a complete analytics workflow:
 The solution transforms operational shipment data into actionable business insights through data generation, validation, SQL analysis, data modeling, DAX measures, and an interactive Power BI dashboard.
 
 ---
+## 🔗 Quick Navigation
+
+- 📊 [Power BI Dashboard](Dashboard/)
+- 📁 [Dataset](Dataset/)
+- 🗄️ [SQL Analysis](SQL/)
+- 🐍 [Python Data Generation & Validation](Python/)
+- 📚 [Project Documentation](Documentation/)
 
 ## 🎯 Business Problem
 
